@@ -13,8 +13,9 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            height: auto;
-            text-align: center;
+            justify-content: flex-start;
+            min-height: 120vh; /* Aumenta a altura mínima para forçar a rolagem se necessário */
+            overflow-y: auto; /* Permite rolagem vertical */
             padding: 20px;
             box-sizing: border-box;
             position: relative;
