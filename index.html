@@ -3,19 +3,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TITAN - Você consegue vencer o TITAN?</title>
     <style>
-        html, body {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            overflow-y: auto;
-        }
         body {
+            margin: 0;
             font-family: Arial, sans-serif;
             background-color: #000;
             color: #fff;
             text-align: center;
             padding: 20px;
             box-sizing: border-box;
+            min-height: 100vh; /* Garante que o body tenha pelo menos 100% da altura da viewport */
+            overflow-y: auto; /* Adiciona rolagem vertical se o conteúdo exceder a altura */
         }
         h1 {
             font-size: 3em;
@@ -83,11 +80,9 @@
             background-color: #e63900;
         }
         .footer-watermark {
-
-            bottom: 10px;
-            right: 10px;
             font-size: 0.8em;
             color: #555;
+            margin-top: 50px; /* Adiciona margem para o rodapé não ficar colado */
         }
         .hand-emoji {
             font-size: 1.5em;
