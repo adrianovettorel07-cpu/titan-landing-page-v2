@@ -5,9 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TITAN - Você consegue vencer o TITAN?</title>
     <style>
-        html {
-            min-height: 100vh;
-        }
         body {
             margin: 0;
             font-family: Arial, sans-serif;
@@ -15,15 +12,14 @@
             color: #fff;
             padding: 20px;
             box-sizing: border-box;
-            min-height: 100%;
-            overflow-y: auto;
+            min-height: 150vh; /* Aumenta a altura mínima para forçar a rolagem */
+            overflow-y: auto; /* Permite rolagem vertical */
         }
-
         h1 {
             font-size: 3em;
             color: #ff9900;
             margin-bottom: 10px;
-        }
+     }
         h1 .titan-text {
             color: #ff4500;
         }
@@ -85,9 +81,7 @@
             background-color: #e63900;
         }
         .footer-watermark {
-            position: absolute;
-            bottom: 10px;
-            right: 10px;
+            margin-top: 50px; /* Adiciona um espaçamento superior */
             font-size: 0.8em;
             color: #555;
         }
@@ -113,9 +107,7 @@
         }
     </style>
 </head>
-<body>
-    <div class="main-content-wrapper">
-    <h1><span class="hand-emoji">👉</span>Você consegue vencer o <span class="titan-text">TITAN</span>?</h1>
+<body>    <h1><span class="hand-emoji">👉</span>Você consegue vencer o <span class="titan-text">TITAN</span>?</h1>
     <p>O setup que desafia traders e investidores do mundo todo.</p>
     <p>O TITAN antecipa movimentos do mercado com precisão impressionante. <br>Agora você pode testar suas previsões contra ele e descobrir: quem é melhor, você ou a máquina?</p>
 
@@ -152,8 +144,3 @@
     <div class="footer-watermark">
         Made with Manus
     </div>
-    </div>
-</body>
-</html>
-
-
