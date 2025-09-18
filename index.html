@@ -5,48 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TITAN - Você consegue vencer o TITAN?</title>
     <style>
+        html {
+            min-height: 100vh;
+        }
         body {
             margin: 0;
             font-family: Arial, sans-serif;
             background-color: #000;
             color: #fff;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            min-height: 100vh; /* Garante que o body ocupe pelo menos a altura da viewport */
-            overflow-y: auto; /* Permite rolagem vertical apenas se o conteúdo exceder a altura da viewport */
             padding: 20px;
             box-sizing: border-box;
-            position: relative;
+            min-height: 100%;
+            overflow-y: auto;
         }
-        body::before, body::after {
-            content: '';
-            position: absolute;
-            width: 2px;
-            background-color: #f00;
-            height: 100px;
-            top: 0;
-            left: 10%;
-            transform: rotate(45deg);
-            transform-origin: top left;
-            opacity: 0.3;
-        }
-        body::after {
-            left: auto;
-            right: 10%;
-            background-color: #0f0;
-            transform: rotate(-45deg);
-            transform-origin: top right;
-        }
-        .main-content-wrapper {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: flex-start;
-            min-height: 100vh; /* Garante que o wrapper ocupe pelo menos a altura da viewport */
-            overflow-y: auto; /* Permite rolagem vertical apenas se o conteúdo exceder a altura da viewport */
-            width: 100%;
-        }
+
         h1 {
             font-size: 3em;
             color: #ff9900;
