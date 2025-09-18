@@ -3,20 +3,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TITAN - Você consegue vencer o TITAN?</title>
     <style>
-        body {
+        html, body {
             margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow-y: auto;
+        }
+        body {
             font-family: Arial, sans-serif;
             background-color: #000;
             color: #fff;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
             text-align: center;
             padding: 20px;
             box-sizing: border-box;
-            
         }
         h1 {
             font-size: 3em;
@@ -84,7 +83,7 @@
             background-color: #e63900;
         }
         .footer-watermark {
-            position: fixed;
+
             bottom: 10px;
             right: 10px;
             font-size: 0.8em;
