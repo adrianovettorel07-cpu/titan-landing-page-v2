@@ -6,18 +6,20 @@
     <title>TITAN - Você consegue vencer o TITAN?</title>
     <style>
 
-        html {
+        html, body {
             height: 100%;
+            margin: 0;
+            padding: 0;
             overflow: auto;
         }
         body {
-            height: 100%;
             font-family: Arial, sans-serif;
             background-color: #000;
             color: #fff;
             padding: 20px;
             box-sizing: border-box;
-            overflow: auto; /* Garante rolagem para o body */
+            min-height: 100%;
+            overflow-y: auto;
         }
 
         h1 {
