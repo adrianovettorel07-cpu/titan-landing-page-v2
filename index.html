@@ -10,13 +10,16 @@
             font-family: Arial, sans-serif;
             background-color: #000;
             color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
             padding: 20px;
             box-sizing: border-box;
-            min-height: 100vh; /* Garante que o body ocupe pelo menos a altura da viewport */
-            overflow-y: auto; /* Permite rolagem vertical apenas se o conteúdo exceder a altura da viewport */
-            padding-bottom: 100px; /* Adiciona espaço extra na parte inferior para garantir rolagem */
+            overflow: hidden; /* Impede a rolagem */
         }
-
         h1 {
             font-size: 3em;
             color: #ff9900;
@@ -83,7 +86,9 @@
             background-color: #e63900;
         }
         .footer-watermark {
-            margin-top: 50px;
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
             font-size: 0.8em;
             color: #555;
         }
