@@ -10,13 +10,14 @@
             font-family: Arial, sans-serif;
             background-color: #000;
             color: #fff;
-            display: block; /* Permite que o conteúdo flua naturalmente */
-            min-height: auto; /* Remove altura mínima fixa */
-            overflow: visible; /* Deixa o navegador lidar com a rolagem */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh; /* Garante que o body ocupe pelo menos a altura da viewport */
+            overflow-y: auto; /* Permite rolagem vertical apenas se o conteúdo exceder a altura da viewport */
             padding: 20px;
             box-sizing: border-box;
             position: relative;
-
         }
         body::before, body::after {
             content: '';
@@ -36,6 +37,15 @@
             background-color: #0f0;
             transform: rotate(-45deg);
             transform-origin: top right;
+        }
+        .main-content-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh; /* Garante que o wrapper ocupe pelo menos a altura da viewport */
+            overflow-y: auto; /* Permite rolagem vertical apenas se o conteúdo exceder a altura da viewport */
+            width: 100%;
         }
         h1 {
             font-size: 3em;
@@ -132,6 +142,7 @@
     </style>
 </head>
 <body>
+    <div class="main-content-wrapper">
     <h1><span class="hand-emoji">👉</span>Você consegue vencer o <span class="titan-text">TITAN</span>?</h1>
     <p>O setup que desafia traders e investidores do mundo todo.</p>
     <p>O TITAN antecipa movimentos do mercado com precisão impressionante. <br>Agora você pode testar suas previsões contra ele e descobrir: quem é melhor, você ou a máquina?</p>
@@ -168,6 +179,7 @@
 
     <div class="footer-watermark">
         Made with Manus
+    </div>
     </div>
 </body>
 </html>
